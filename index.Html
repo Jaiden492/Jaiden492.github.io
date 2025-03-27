@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toronto Maple Leafs - History</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #003B5C;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1, h2, h3 {
+            color: #003B5C;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            background-color: #003B5C;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #0a74da;
+        }
+
+        section {
+            display: none;
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #003B5C;
+            color: white;
+        }
+
+        footer a {
+            color: #0a74da;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #003B5C;
+            color: white;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        #main-photo {
+            width: 80%;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The History of the Toronto Maple Leafs</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b6/Toronto_Maple_Leafs_2016_logo.svg/800px-Toronto_Maple_Leafs_2016_logo.svg.png" height="350" width="350">
+        <p>A Journey Through One Of Hockey's Most Iconic Teams.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" onclick="changeSection('history')">History</a></li>
+            <li><a href="#" onclick="changeSection('team')">Team Facts</a></li>
+            <li><a href="#" onclick="changeSection('records')">Team Records</a></li>
+            <li><a href="#" onclick="changeSection('photos')">Photos</a></li>
+        </ul>
+    </nav>
+
+    <!-- History Section -->
+    <section id="history">
+        <h2>Early Years (1917-1940)</h2>
+        <p>The Toronto Maple Leafs were founded in 1917 as the Toronto Arenas, becoming one of the original teams in the National Hockey League (NHL). In 1927, they were renamed to the Toronto Maple Leafs by the owner and future Hall of Famer, Harold Ballard. The team quickly became a major force in the NHL, winning their first Stanley Cup in 1918. Over the next several decades, the Leafs would go on to dominate the league, with many players and coaches becoming legends of the game.</p>
+
+        <h2> Present Day (2024-2025)</h2>
+        <p>As of me writing this the Toronto Maple Leafs are secound in the Atlantic Division with a record of 42-25-3. Even though the Toronto Maple Leafs have not won a Stanley cup since 1967 they are still on of the most beloved teams in the NHL.</p>
+    </section>
+
+    <!-- Team Facts Section -->
+    <section id="team">
+        <h2>Modern Era (1940-Present)</h2>
+        <p>The team continued to dominate the NHL in the 1940s and 1950s, winning 11 Stanley Cups between 1942 and 1967, including five in a row from 1947 to 1951. This period is considered the golden age of the Leafs. Ever since, the Toronto Maple Leafs have become one of the most beloved teams in the NHL, even though their last Stanley Cup victory was in 1967.</p>
+
+        <h2>Total Value of Toronto Maple Leafs</h2>
+        <p>The Toronto Maple Leafs have an estimated worth of $1.3 billion US dollers, The Toronto Maple Leafs are the most valuable franchise in the NHL. Followed by the New York Rangers and the Montreal Canadiens. In 2015, they were ranked by Forbes as the 37th most valuable sports team in the world.</p>
+    </section>
+
+    <!-- Team Records Section -->
+    <section id="records">
+        <h2>Team Records</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Record</th>
+                    <th>Year</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Most Goals in a Season</td>
+                    <td>1993</td>
+                    <td>Doug Gilmour, 127 points</td>
+                </tr>
+                <tr>
+                    <td>Most Goals by a Rookie</td>
+                    <td>1986</td>
+                    <td>Wendel Clark, 34 goals</td>
+                </tr>
+                <tr>
+                    <td>Longest Home Winning Streak</td>
+                    <td>1999</td>
+                    <td>12 games</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Photos Section -->
+    <section id="photos">
+        <h2>Toronto Maple Leafs Photo Gallery</h2>
+        <div class="gallery">
+            <img src="https://www.hhof.com/images_hockeypedia/teamphotos_05_torontomapleleafs.jpg" onclick="showPhoto('https://www.hhof.com/images_hockeypedia/teamphotos_05_torontomapleleafs.jpg')">
+            <img src="https://www.scotiabankarena.com/assets/img/Maple-Leafs_Scotiabank-Arena-2dc02cce33.png" onclick="showPhoto('https://www.scotiabankarena.com/assets/img/Maple-Leafs_Scotiabank-Arena-2dc02cce33.png')">
+            <img src="https://images2.minutemediacdn.com/image/upload/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/3df9e37a03930cebfc1fbd4662d7159e6730d9789468133f30145e56e01a22af.jpg" onclick="showPhoto('https://images2.minutemediacdn.com/image/upload/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/3df9e37a03930cebfc1fbd4662d7159e6730d9789468133f30145e56e01a22af.jpg')">
+        </div>
+
+        <!-- Display clicked photo here -->
+        <img id="main-photo" src="" alt="Main Photo">
+    </section>
+
+    <footer>
+        <p>For more information, visit the official Toronto Maple Leafs website: <a href="https://www.nhl.com/mapleleafs" target="_blank">Toronto Maple Leafs</a></p>
+    </footer>
+
+    <script>
+        function changeSection(section) {
+            // Hide all sections
+            const sections = document.querySelectorAll('section');
+            sections.forEach(s => s.style.display = 'none');
+            
+            // Show the selected section
+            const selectedSection = document.getElementById(section);
+            selectedSection.style.display = 'block';
+        }
+
+        function showPhoto(photoUrl) {
+            const photoDisplay = document.getElementById('main-photo');
+            photoDisplay.src = photoUrl;
+        }
+
+        // Show the history section by default when the page loads
+        window.onload = function() {
+            changeSection('history');
+        }
+    </script>
+</body>
+</html>
