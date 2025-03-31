@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toronto Maple Leafs - History</title>
+    <link rel="stylesheet" type="text/css" href="">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #003B5C;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1, h2, h3 {
+            color: #003B5C;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            background-color: #003B5C;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #0a74da;
+        }
+
+        section {
+            display: none;
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #003B5C;
+            color: white;
+        }
+
+        footer a {
+            color: #0a74da;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #003B5C;
+            color: white;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        #main-photo {
+            width: 80%;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The History of the Toronto Maple Leafs</h1>
+        <img src="https://lh3.googleusercontent.com/p/AF1QipP-2owWwRXyoH-kUssCfJIq21f4hPAWKAQJ7E8I=s680-w680-h510" height="350" width="350">
+        <p>Facts about Hockey's Most Iconic Staduim.</p>
+    </header>
+
+    
+     <nav>
+        <ul>
+            <li><a href="#" onclick="changeSection('history')">History</a></li>
+            <li><a href="#" onclick="changeSection('photos')">Photos</a></li>
+        </ul>
+    </nav>
+<!--History Section -->
+    <section id="history">
+        <h2>The Creation (December 1994)</h2>
+        <p>The old Postal Building that was on the land was sold to a consortium of developers but was reverted to Canada Post ownership. In 1993 due to financial situations, But the new ownership of the soon to be Toronto Raptors basketball team acquried the building in December of 1994 to contruct the new arena.</p>
+
+        <h2> The joining of the Toronto Maple Leafs (Febuary 1999) </h2>
+        <p>Conn Smythe renamed the franchise to the Maple Leafs after buying it in 1927. The team played home games at the Mutual Street Arena for its first 14 seasons before moving to the Maple leaf garden in 1931. Since Febuary of 1999, the Maple Leafs play at the Scotiabank Arena, Which was formerly known as the Air Canada Centre.</p>
+    </section>
+    
+    <!-- Photos Section -->
+    <section id="photos">
+        <h2>Toronto Maple Leafs Photo Gallery</h2>
+        <div class="gallery">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4XLYHWk9aAZ6TxqAWSfLEqApYRHCVsnCBzQ&s" onclick="showPhoto('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4XLYHWk9aAZ6TxqAWSfLEqApYRHCVsnCBzQ&s')">
+            <img src="https://www.scotiabankarena.com/assets/img/Maple-Leafs_Scotiabank-Arena-2dc02cce33.png" onclick="showPhoto('https://www.scotiabankarena.com/assets/img/Maple-Leafs_Scotiabank-Arena-2dc02cce33.png')">
+            <img src="https://images2.minutemediacdn.com/image/upload/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/3df9e37a03930cebfc1fbd4662d7159e6730d9789468133f30145e56e01a22af.jpg" onclick="showPhoto('https://images2.minutemediacdn.com/image/upload/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/3df9e37a03930cebfc1fbd4662d7159e6730d9789468133f30145e56e01a22af.jpg')">
+        </div>
+
+        <!-- Display clicked photo here -->
+        <img id="main-photo" src="" alt="Main Photo">
+    </section>
+
+    
+
+    <script>
+        function changeSection(section) {
+            // Hide all sections
+            const sections = document.querySelectorAll('section');
+            sections.forEach(s => s.style.display = 'none');
+            
+            // Show the selected section
+            const selectedSection = document.getElementById(section);
+            selectedSection.style.display = 'block';
+        }
+
+        function showPhoto(photoUrl) {
+            const photoDisplay = document.getElementById('main-photo');
+            photoDisplay.src = photoUrl;
+        }
+
+        // Show the history section by default when the page loads
+        window.onload = function() {
+            changeSection('history');
+        }
+    </script>
+</body>
+</html>
